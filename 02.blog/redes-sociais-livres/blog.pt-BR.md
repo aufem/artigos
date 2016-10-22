@@ -1,5 +1,6 @@
 ---
 title: 'Redes Sociais Livres'
+publish_date: '20-05-2016 00:00'
 taxonomy:
     tag:
         - 'redes sociais'
@@ -19,7 +20,7 @@ Deve ser construída com, e respeitar [a filosofia do software livre (livre como
 
 Exemplos:
 
-* [Diáspora](https://diasporabrazil.org/)
+* [Diáspora](https://diasporabr.com.br)
 
 Rede social distribuida, feita pela comunidade de software livre.
 

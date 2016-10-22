@@ -25,6 +25,8 @@ Você é livre para escolher a que achar melhor:
 
 <i class="fa fa-git" aria-hidden="true"></i> <a href="https://notabug.org/aufem">Not a Bug</a> (solicite acesso)
 
+<i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/aufem">Github</a>
+
 <i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:{{'aufem@protonmail.com'|safe_email}}">E-mail Protonmail</a>
 
 <i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:{{'aufem@openmailbox.org'|safe_email}}">E-mail com GPG</a>

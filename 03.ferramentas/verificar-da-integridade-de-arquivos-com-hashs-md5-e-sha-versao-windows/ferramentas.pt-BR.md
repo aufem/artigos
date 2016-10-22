@@ -2,10 +2,18 @@
 title: 'Verificar a integridade de arquivos com hashs MD5 e SHA (versão Windows)'
 metadata:
     keywords: '''verificar MD5 SHA-1 SHA-256 ou SHA-512 de um arquivo, criptografia, MD5 and SHA Checksum Utility'''
+    'og: title': 'Verificar a integridade de arquivos com hashs MD5 e SHA'
+    'og: title': 'Aufem | Verificar a integridade de arquivos no Windows'
+    author: AuFem
+    'og:description': 'Saiba como verificar a integridade de arquivos com hashs MD5 e SHA no Windows.'
+    'twitter:title': 'Aufem | Verificar a integridade de arquivos no Windows'
+    'twitter:description': 'Saiba como verificar a integridade de arquivos com hashs MD5 e SHA no Windows.'
 taxonomy:
+    author:
+        - aufem
     tag:
-        - criptografia
         - segurança
+        - criptografia
         - Windows
         - 'verificar MD5'
         - 'verificar SHA'

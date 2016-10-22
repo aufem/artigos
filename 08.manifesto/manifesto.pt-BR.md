@@ -20,4 +20,4 @@ Somos mulheres que buscam conhecimento por si próprias. Que aprendemos não só
 
 Não queremos "encontrar um lugar para as mulheres dentro do sistema". Queremos construir espaços seguros para as mulheres e para todas as pessoas que não reconhecemos com o gênero masculino, para que elas possam viver em um mundo digital sem a opressão do patriacado a que estão sujeitas no mundo desconectado.
 
-![Estrela do Anarco-feminismo](../../../images/Anarcha-femeninism.png)
+![Estrela do Anarco-feminismo](../../../images/Anarcofeminismo.png)

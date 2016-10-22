@@ -1,7 +1,13 @@
 ---
 title: 'Qual a impressão digital do seu navegador (browser fingerprint)?'
+date: '06-06-2016 00:00'
 metadata:
     keywords: 'browser fingerprint, impressão digital do navegador, rastreamento, anonimato'
+    'og:title': 'Aufem | Qual a impressão digital do seu navegador?'
+    author: AuFem
+    'og:description': 'Cada vez que você envia uma requisição para visitar um site, seu navegador envia para o servidor desse site uma série de informações que o identificam. Que informações são essas?'
+    'twitter:title': 'Aufem | Qual a impressão digital do seu navegador?'
+    'twitter:description': 'Cada vez que você envia uma requisição para visitar um site, seu navegador envia para o servidor desse site uma série de informações que o identificam. Que informações são essas?'
 taxonomy:
     author:
         - aufem
@@ -24,8 +30,12 @@ Ou seja, minha navegação no Mozilla Firefox é totalmente identificável.
 
 Abaixo, ele lista em "My Fingerprint" todos os detalhes utilizados para formar essa impressão digital: "user agent" (navegador e sistema operacional), content encoding (codificação de caracteres), content language (idiomas configurados), lista de plugins, plataforma, cookies aceitos, Do Not Track (não rastrear), Timezone (fuso horário), Screen resolution (resolução de tela), use of local storage (uso de armazenamento local), canvas (elemnto do HTML5), lista de fontes, use of adblock (uso do bloqueador de anúncios), entre outros.
 
+Uma outra fonte para testar sua navegação é a ferramenta [Panopticlick](https://panopticlick.eff.org/), desenvolvida pela EFF.
+
 Como pode perceber, a combinação dessas propriedades é geralmente única para cada computador - e é enviada para todo e qualquer site visitado. Isso quer dizer que a grande maioria das pessoas que utilizam a internet (incluindo você!) podem ser identificadas - e rastreada - por esse método, mesmo sem a utilização de cookies, tão somente pelos atributos dos navegadores.
+
+Quer conhecer uma das formas de mascarar impressão digital do seu navegador? Dê uma lida no nosso post sobre [como usar Tor para navegar anônima na web](../../ferramentas/como-usar-tor-para-navegar-anonima-na-web).
 
 Existem muito mais coisas na questão de impressões digitais do navegador - e o objetivo desse artigo é apenas introduzir alguns conceitos básicos. No futuro, vamos escrever mais sobre isso, mas desde já recomendamos que você pesquise sobre como evitar que sua impressão digital seja única, que leia e aprofunde mais esse conhecimento, até para sua própria segurança. 
 
-Você tem alguma dica legal sobre isso? Que tal colocar abaixo nos comentários ou escrever um artigo e <a href="mailto:{{'aufem@protonmail.com'|safe_email}}">enviar</a> para nós?
+Você tem mais alguma dica legal sobre isso? Que tal colocar abaixo nos comentários ou escrever um artigo e <a href="mailto:{{'aufem@protonmail.com'|safe_email}}">enviar</a> para nós?

@@ -1,5 +1,9 @@
 ---
 title: 'O que é Software Livre?'
+date: '05-19-2016 00:00'
+metadata:
+    'og: title': 'O que é software livre?'
+    keywords: 'software livre, GNU, GnuPL'
 taxonomy:
     author:
         - aufem
@@ -11,9 +15,9 @@ taxonomy:
         - blog
 ---
 
-![Cabeça do GNU colorida, com uma barba larga e chifres enrolados. Ele ou ela parece estar sorrindo em contentamento ao mirar à distância.](../../../images/gnu_head_colour_large.png)
+![Cabeça do GNU colorida, com uma barba larga e chifres enrolados. Ele ou ela parece estar sorrindo em contentamento ao mirar à distância.](../../../images/cabeca_gnu.png)
 
-Software livre significa que os usuários tem a liberdade para executar, copiar, distribuir, estudar, mudar e melhorar o software.
+Software livre significa que as usuárias tem a liberdade para executar, copiar, distribuir, estudar, mudar e melhorar o software.
 
 Software livre é uma questão de liberdade, não de preço. Para entender esse conceito, você deve pensar em "livre" como em "liberdade de expressão", não como "livre de custo monetário".
 

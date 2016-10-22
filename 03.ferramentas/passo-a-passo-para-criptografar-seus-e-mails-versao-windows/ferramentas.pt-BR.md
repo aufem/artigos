@@ -1,28 +1,38 @@
 ---
-title: 'Passo-a-passo para criptografar seus e-mails (versão Windows)'
+title: 'Passo-a-passo para criptografar e-mails (Windows)'
+metadata:
+    keywords: 'criptografar email, GPG, PGP, criptografia e-mail windows'
+    title: 'Passo-a-passo para criptografar e-mails (Windows)'
+    'og: title': 'Aufem | Passo-a-passo para criptografar e-mails (Windows)'
+    author: AuFem
+    'og:description': 'Saiba como funciona GPG/PGP e a criptografia de chaves públicas e como criptografar seus e-mails no Windows.'
+    'twitter:title': 'Aufem | Passo-a-passo para criptografar e-mails (Windows)'
+    'twitter:description': 'Saiba como funciona GPG/PGP e a criptografia de chaves públicas e como criptografar seus e-mails no Windows.'
 process:
     markdown: true
     twig: true
 taxonomy:
+    author:
+        - aufem
     tag:
+        - segurança
+        - ferramentas
         - criptografia
         - e-mail
-        - segurança
         - Windows
         - GnuPG
         - PGP
-        - ferramentas
     categoria:
         - ferramentas
 ---
 
 # Como funciona GPG/PGP e a criptografia de chaves públicas: 
 
-* Todos têm um par de chaves. Uma chave pública e uma privada.
+* Todas têm um par de chaves. Uma chave pública e uma privada.
 
-* A chave PRIVADA do emissor da mensagem é combinada com a chave PÚBLICA de do recipiente da mensagem, para criar um problema matemático (o texto cifrado) que protege o texto da mensagem.
+* A chave PRIVADA do emissor da mensagem é combinada com a chave PÚBLICA da recipiente da mensagem, para criar um problema matemático (o texto cifrado) que protege o texto da mensagem.
 
-* Esse problema (texto cifrado) só pode ser resolvido pela chave PRIVADA do recipiente. A solução é a mensagem em somente texto.
+* Esse problema (texto cifrado) só pode ser resolvido pela chave PRIVADA da recipiente. A solução é a mensagem em somente texto.
 
 GPG é relativamente seguro, a não ser que você perca sua chave privada – digamos, ao passar pela segurança de um aeroporto – ou tenha sua frase secreta comprometida.
 
@@ -30,39 +40,39 @@ GPG é relativamente seguro, a não ser que você perca sua chave privada – di
 
 1) Ir em [https://www.gpg4win.org/](https://www.gpg4win.org/ "https://www.gpg4win.org/") e clicar em: "Download Gpg4win".
 
-![Imagem 04](https://cdn.pbrd.co/images/1GFOt8L6.jpg)
+![Baixar gpg4win](../../../images/baixar_gpg4win.png)
 
 2) Baixar a versão mais atualizada (na caixa de diálogo, clicar em “download” ou “salvar arquivo)
 
-![Imagem 05](https://cdn.pbrd.co/images/1GFRpFzd.jpg)
+![Salvar gpg4win](../../../images/salvar_gpg4win.png)
 
 3) Verificar o arquivo com a ferramenta MD5 and SHA Checksum Utility conforme explicado em [verificar da integridade de arquivos com hashs MD5 e SHA (versão Windows)](../verificar-da-integridade-de-arquivos-com-hashs-md5-e-sha-versao-windows).
  
 4) Instalar o GPG4Win. Escolha o idioma.
 
-![Imagem 06](https://cdn.pbrd.co/images/1GFULI2A.jpg)
+![Escolha o idioma](../../../images/escolha_o_idioma.png)
 
 5) Vá avançando em “seguinte” até a terceira tela, mostrada abaixo. 
 
-![Imagem 07](https://cdn.pbrd.co/images/1GFZpCss.jpg)
+![Escolha de componentes](../../../images/escolha_de_componentes.png)
 
 6) Marque e certifique-se que as seguintes opções estão marcadas: Kleopatra e GPA. (GpgOL é o componente para o Microsoft Outlook, deixe marcado apenas se você usa Outlook para seus e-mails). Continue avançando até terminar a instalação.
 
 7) No Menu Iniciar, encontre GPA e abra o programa. Na primeira execução, vai aparecer a mensagem abaixo: “Você ainda não tem uma chave privada. Quer gerar uma agora ou mais tarde?” CLIQUE EM em “Do it later” (mais tarde), porque vamos configurar o programa primeiro.
 
-![Imagem 08](https://cdn.pbrd.co/images/1GG6HVYf.jpg)
+![Gerar chave privada agora ou mais tarde? Mais tarde.](../../../images/gerar_chave_privada_mais_tarde.png)
 
 8) Vá no menu “Edit” e clique em “Preferences”
 
-![Imagem 09](https://cdn.pbrd.co/images/1GG9U953.jpg)
+![Editar preferências](../../../images/editar_preferencias.png)
 
 9) Marque “Use advanced mode” para poder criar a chave mais segura possível.
 
-![Imagem 10](https://cdn.pbrd.co/images/1GGdu9gL.jpg)
+![Usar modo avançado](../../../images/usar_modo_avancado.png)
 
 10) Para criar uma chave criptográfica, você vai utilizar o menu “Keys”, opção “New Key”.
 
-![Imagem 11](https://cdn.pbrd.co/images/1GGhBcGZ.jpg)
+![Criar chave privada: menu "chaves", "nova chave"](../../../images/criar_chave_privada.png)
 
 O que você precisa:
 
@@ -76,17 +86,17 @@ O que você precisa:
 
 **Comment:** Comentários (opcional)
 
-**Expires:** Indica se a chave vai ter uma validade limitada 
+**Expires:** Indica se a chave vai ter uma validade limitada (recomendado colocar alguns anos a frente)
 
-![Imagem 12](https://cdn.pbrd.co/images/1GGr9Csy.jpg)
+![Gerar nova chave](../../../images/nova_chave_gpg.png)
 
 11) Após clicar em “ok”, você precisará colocar uma frase secreta. A segurança da sua chave depende dessa frase, então ela precisa ser o mais forte possível. 
 
-<b>Boas senhas devem ser:</b>
+<b id="senhas">Boas senhas devem ser:</b>
 
 1. longas e fáceis de memorizar
 2. não conter nomes, datas ou outras coisas que podem ser associadas a você
-3. conter ao menos um numeral, um caracter especial e uma letra minúscula/maiúscula. Cuidado com substituições comuns como "$" para "s", "@" para "a," "1" para "L", "3 para E" e por aí vai
+3. conter *ao menos* um numeral, um caracter especial e uma letra minúscula/maiúscula. Cuidado com substituições comuns como "$" para "s", "@" para "a," "1" para "L", "3 para E" e por aí vai
 4. não deve conter palavras comuns ou frases comuns ou que possam ser encontradas em um dicionário
 5. erros de digitação intencionais, pessoais e fáceis de recordar são uma excelente forma de prevenir ataques baseados em palavras do dicionário. Por exemplo: “qando 20+ senhas nao eh Dificelt“ é muito mais forte do que “quando 20+ senhas nao é dificil!" e levaria 21 quattuordecilhões de anos para um computador quebrá-la por força bruta.</blockquote>
 
@@ -106,7 +116,7 @@ Clicar “Yes” na mensagem “The selected key(s) will be sent to a public key
 
 IMPORTANTE: após enviar a chave para um servidor público, você não pode excluí-la, a não ser que gere um “certificado de revogação”. Isso pode ser feito pelo GPA. Se você perder a sua chave, isso não poderá ser feito, então é importante fazer isso previamente e armazenar o certificado em um lugar seguro.
 
-![Imagem 13](https://cdn.pbrd.co/images/1GGBZNEV.jpg)
+![Enviar chave para o servidor público](../../../images/enviar_chave_para_o_servidor.png)
 
 2) Para encontrar as chaves de outras pessoas, vamos a um servidor público como o https://sks-keyservers.net/i/ e fazemos uma busca. Na caixa “search string” coloca-se um dos seguintes parâmetros:
 
@@ -116,19 +126,19 @@ IMPORTANTE: após enviar a chave para um servidor público, você não pode excl
 
 - Key ID (últimos 8 números da chave), precedido de 0x. No caso da nossa chave, por exemplo, se coloca 0x27076BC7
 
+![Pesquisar chave pública no servidor](../../../images/pesquisar_chave_publica.png)
+
 Por fim, clicar em “Do the search!” (pesquisar)
 
-![Imagem 14](https://cdn.pbrd.co/images/1GGEVZXG.jpg)
+3) A chave que acabamos de gerar e publicar está nos resultados. Clicar no keyID para abri-la.
 
-3) A chave que acabamos de gerar e publicar aparece nos resultados. Clicar no keyID para abri-la.
-
-![Imagem 15](https://cdn.pbrd.co/images/1GGJunpu.jpg)
+![Abrir chave pública no servidor](../../../images/encontrar_chave_no_servidor.png)
 
 4) Para determinar se algo é uma chave ou uma mensagem criptografada, basta olhar os cabeçalhos. Se disser “PGP MESSAGE BLOCK” ou “BEGIN PGP MESSAGE”, quer dizer que é uma mensagem. Chaves dizem “PGP PUBLIC KEY BLOCK”, como nesse caso. 
 
 Você tem de selecionar todo o texto a partir dos hífens até o final e copiar.
 
-![Imagem 16](https://cdn.pbrd.co/images/1GGNd4QY.jpg)
+![Copiar uma chave pública](../../../images/copiar_chave_publica.png)
 
 5) Vá ao GPA e aperte “CTRL+V”. Isso vai importar a chave. Como buscamos nossa própria chave, nada foi mudado. 
 
@@ -145,11 +155,11 @@ Você tem de selecionar todo o texto a partir dos hífens até o final e copiar.
 
 1) Escreva o e-mail no bloco de notas ou no Clipboard do GPA. (escrever diretamente no Clipboard poupa o trabalho de copiar e colar)
 
-![Imagem 17](https://cdn.pbrd.co/images/1GGQAIwE.jpg)
+![Clipboard do GPA](../../../images/clipboard_do_gpa.png)
 
 2) Após escrever, você vai clicar em “Encrypt”.
 
-![Imagem 18](https://cdn.pbrd.co/images/1GGTkSGo.jpg)
+![Encriptar a mensagem](../../../images/encriptar_a_mensagem.png)
 
 3) E vai: 
 
@@ -157,23 +167,23 @@ a)	Selecionar a chave do amigo para quem você quer mandar a mensagem. Nesse cas
 
 b)	“Sign” (assinar) uma mensagem prova por criptografia que essa mensagem foi assinada por alguém que está no controle daquela chave e daquela frase senha.
 
-![Imagem 19](https://cdn.pbrd.co/images/1GGXMIiS.jpg)
+![Assinar uma mensagem](../../../images/assinar_uma_mensagem.png)
 
 4) Pode aparecer a mensagem “However, it is not certain that the key belongs to that person. Do you really want to use this key” (Não há certeza que essa chave pertence a essa pessoa. Você tem certeza que quer usá-la?). Clique em “Yes”.
 
-![Imagem 20](https://cdn.pbrd.co/images/1GH1RuGu.jpg)
+![Usar essa chave](../../../images/usar_essa_chave.png)
 
 5) Coloque sua frase secreta. No nosso caso, qando 20+ senhas nao eh Dificelt. 
 E teremos nossa mensagem criptografada pronta para ser colada no e-mail.
 
-![Imagem 21](https://cdn.pbrd.co/images/1GH5sIpD.jpg)
+![Mensagem criptografada](../../../images/mensagem_criptografada.png)
 
 
 ## Descriptografando e-mails
 
 1) Copiar o bloco inteiro com a mensagem
 
-![Imagem 22](https://cdn.pbrd.co/images/1GH8qwRL.jpg)
+![Copiar a mensagem](../../../images/copiar_mensagem_criptografada.png)
 
 2) Em seguida:
 
@@ -183,22 +193,22 @@ b)	“Decrypt” (descriptografar)
 
 c)	Coloque a frase senha da sua chave secreta
 
-![Imagem 23](https://cdn.pbrd.co/images/1GHbUG9T.jpg)
+![Descriptografar a mensagem](../../../images/descriptografar_mensagem.png)
 
 3) E... voilà! Temos a mensagem em somente texto (o que só é possível se sua frase secreta estiver correta).
 
-![Imagem 24](https://cdn.pbrd.co/images/1GHeHENY.jpg)
+![Mensagem em somente texto](../../../images/somente_texto.png)
 
 
 ## Testando
 
 adele-en@gnupp.de é uma chave teste automatizada. As dezenas de links abaixo dela são chaves de pessoas que ASSINARAM ESSA CHAVE (e não uma mensagem). Esse é um método em que o DONO DA CHAVE X certifica que o DONO DA CHAVE Y é quem ele(a) diz que é.
 
-![Imagem 25](https://cdn.pbrd.co/images/1GHi6wms.jpg)
+![Buscando chave pública](../../../images/buscando_chave_publica.png)
 
 1) Você pode pegar a sua chave PÚBLICA (“PGP PUBLIC KEY BLOCK”) e colar em um novo e-mail a ser enviado para adele-en@gnupp.de. Isto é compartilhar sua chave sem a necessidade de encaminhá-la a um servidor.
 
-![Imagem 26](https://cdn.pbrd.co/images/1GHls1As.jpg)
+![Colar chave pública em e-mail](../../../images/colar_chave_publica_no_email.png)
 
 2) Ela responderá com uma mensagem criptografada. Copie no Clipboard, coloque a senha da sua CHAVE PRIVADA e leia e mensagem! (você vai precisar de um tradutor, se não souber inglês, mas uma das coisas você deve conseguir identificar, ao menos.)
 

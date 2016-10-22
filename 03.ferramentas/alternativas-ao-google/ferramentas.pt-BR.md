@@ -11,7 +11,7 @@ taxonomy:
         - ferramentas
 ---
 
-Esse site resume de modo simples e direto porque você deve buscar alternativas ao Google: [Don't Track Us - em português](http://donttrack.us/)
+Se o texto falando sobre [Porque a privacidade é importante](../../blog/por-que-a-privacidade-e-importante) não lhe convenceu a largar o Google, recomendamos visitar esse site que resume de modo simples e direto porque você deve buscar alternativas: [Don't Track Us - em português](http://donttrack.us/)
 
 Nos primórdios da internet, antes de haver Gmail e Google Chrome, as pessoas não "googleavam" nada. Elas "consultavam o oráculo". Você pode consultar outros oráculos que não o Google e, melhor, alternativas que respeitam a sua privacidade:
 <br>
